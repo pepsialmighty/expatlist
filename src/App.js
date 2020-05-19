@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Header from './component/header';
 import Footer from './component/footer';
-import FilterBtn from './component/navbar/FilterBtn';
+import Header from './component/header';
 import Thumbnail from './component/Home/thumbnail';
+import FilterBtn from './component/navbar/FilterBtn';
 
 class App extends Component {
   constructor(props) {
@@ -46,7 +46,7 @@ class App extends Component {
     fetch('/api/countries', {
       headers: {
         'Content-Type': 'application/json',
-        Accept: 'application/json',
+        'Accept': 'application/json',
       },
     })
       .then((response) => response.json())
